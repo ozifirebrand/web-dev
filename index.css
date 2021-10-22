@@ -1,0 +1,15 @@
+.top-navigation-bar{
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    top: 0;
+}
+
+.nav-bar-icons{
+     position: absolute;
+     width: 1440px;
+     height: 80px;
+     left: 0;
+     top: 0;
+     display: flex;
+ }
