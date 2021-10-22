@@ -18,13 +18,60 @@ body{
      top: 0;
      display: flex;
  }
+.sixth-row{
+    width: 100vw;
+    background-color: #FFF2C7;
+}
+.sixth-row-first-row{
+    display: flex;
+}
+
+.stay-with-us-text{
+    padding: 10px 0 10px 30px;
+    width: 350px;
+}
+
 .stay-with-us-text h3{
+    top: 20px;
     color: #960C0C;
 }
+
 .stay-with-us-text p{
+    top: 80px;
     width: auto;
 }
 
+.enter-details-buttons{
+    padding-top: 70px;
+    padding-left: 60px;
+}
+
+.name-button{
+    border-width: 0;
+    border-radius: 5px;
+    height: 35px;
+    margin-left:20px;
+    padding-left: 15px;
+}
+
+.email-button{
+    border-width: 0;
+    border-radius: 5px;
+    height: 35px;
+    margin: 2px;
+    padding-left: 15px;
+}
+
+.view-more-button{
+    border-width: 0;
+    border-radius: 5px;
+    height: 35px;
+    color: white;
+    background-color: #FF2E2E;
+    padding-right: 20px;
+    padding-left: 5px;
+
+}
 .last-line{
     padding-left: 300px;
     color:#E8505B;
