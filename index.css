@@ -18,12 +18,16 @@ body{
      top: 0;
      display: flex;
  }
+
 .sixth-row{
     width: 100vw;
-    background-color: #FFF2C7;
 }
+
 .sixth-row-first-row{
+    border-radius: 6px;
+    background-color: #FFF2C7;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .stay-with-us-text{
@@ -69,8 +73,43 @@ body{
     color: white;
     background-color: #FF2E2E;
     padding-right: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
+}
 
+.sixth-row-second-row{
+    border-radius: 6px;
+    background-color: #FFF2C7;
+    padding: 15px 20px 10px 50px;
+    display: flex;
+}
+
+.company-text{
+    margin-left: -20px;
+    margin-right: 150px;
+}
+
+.company-text h3{
+    color: #960C0C;
+}
+
+.what-we-do-text{
+    margin-right: 150px;
+}
+
+.what-we-do-text h3{
+    color: #960C0C;
+}
+
+.partners-text{
+    margin-right: 150px;
+}
+
+.partners-text h3{
+    color: #960C0C;
+}
+
+.natives-text h3{
+    color: #960C0C;
 }
 .last-line{
     padding-left: 300px;
