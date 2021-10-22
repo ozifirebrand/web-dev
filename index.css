@@ -1,3 +1,8 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
 .top-navigation-bar{
     position: absolute;
     width: 1440px;
@@ -13,3 +18,20 @@
      top: 0;
      display: flex;
  }
+.stay-with-us-text h3{
+    color: #960C0C;
+}
+.stay-with-us-text p{
+    width: auto;
+}
+
+.last-line{
+    padding-left: 300px;
+    color:#E8505B;
+}
+.heart-image{
+    margin-top: 10px;
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
