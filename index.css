@@ -19,6 +19,44 @@ body{
      display: flex;
  }
 
+.fifth-row{
+    box-shadow: 0px 4px 25px
+    rgba(241, 194, 194, 0.25);
+}
+
+.fifth-row-first-row{
+    background-color: #FF2E2E;
+    width: 180px;
+    border-radius: 4px;
+    height: 20px;
+    color: white;
+    margin-left: 30px;
+}
+
+.fifth-row-first-row p{
+    margin: 20px 0 0 50px;
+}
+
+.fifth-row-second-row{
+    display: flex;
+}
+
+.atlassian-image{
+    margin-left: 30px;
+    margin-right: 60px;
+}
+.henley-image{
+    margin: 30px 90px 90px 90px;
+}
+
+.leaf-image{
+    top: 30px;
+    margin-right: 70px;
+}
+
+.celo-image{
+
+}
 .sixth-row{
     width: 100vw;
 }
