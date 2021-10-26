@@ -46,17 +46,18 @@ body{
     margin-right: 60px;
 }
 .henley-image{
-    margin: 30px 90px 90px 90px;
+    margin: 60px 100px 30px 40px;
 }
 
 .leaf-image{
     top: 30px;
-    margin-right: 70px;
+    margin: 20px 70px 40px 0;
 }
 
-.celo-image{
-
+.fifth-row-third-row{
+    margin: 0 5px 10px 50rem;
 }
+
 .sixth-row{
     width: 100vw;
 }
@@ -65,11 +66,11 @@ body{
     border-radius: 6px;
     background-color: #FFF2C7;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .stay-with-us-text{
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 20px 30px;
     width: 350px;
 }
 
@@ -110,8 +111,7 @@ body{
     height: 35px;
     color: white;
     background-color: #FF2E2E;
-    padding-right: 20px;
-    padding-left: 10px;
+
 }
 
 .sixth-row-second-row{
