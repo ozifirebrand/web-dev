@@ -1,8 +1,14 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: #aaaaaa;
 }
 
+.container{
+    width: 80vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
 .top-navigation-bar{
     position: absolute;
     width: 1440px;
@@ -20,15 +26,16 @@ body{
  }
 
 .fourth-row{
-    width: 100vw;
-    margin: 10px 10px 20px 10px;
+    /*width: 20%;*/
     display: flex;
     justify-content: space-between;
 }
 
 .fourth-row-box{
+    position: relative;
     background-color: #FFF9E5;
-    padding: 40px 10px 20px -10px;
+    margin: 40px 5rem 5rem 40px;
+    border-radius: 7px;
 
 }
 
@@ -70,10 +77,6 @@ body{
 
 .fifth-row-third-row{
     margin: 0 5px 10px 50rem;
-}
-
-.sixth-row{
-    width: 100vw;
 }
 
 .sixth-row-first-row{
