@@ -19,9 +19,23 @@ body{
      display: flex;
  }
 
+.fourth-row{
+    width: 100vw;
+    margin: 10px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-row-box{
+    background-color: #FFF9E5;
+    padding: 40px 10px 20px -10px;
+
+}
+
 .fifth-row{
-    box-shadow: 0px 4px 25px
+    box-shadow: 0 4px 25px
     rgba(241, 194, 194, 0.25);
+    margin: 100px 0 100px 0;
 }
 
 .fifth-row-first-row{
@@ -153,6 +167,7 @@ body{
     padding-left: 300px;
     color:#E8505B;
 }
+
 .heart-image{
     margin-top: 10px;
     display: inline;

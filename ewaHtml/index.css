@@ -1,0 +1,220 @@
+body{
+    padding: 0;
+    margin: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_circle{
+    position: absolute;
+    top: 5rem;
+    z-index: -1;
+}
+.mobile_frame{
+    background-color: white;
+    width: 25vw;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.bottom_circle{
+    position: absolute;
+    bottom: 5rem;
+    z-index: -1;
+    right: 0;
+}
+
+.intro_text{
+    width: 50%;
+    z-index: 10;
+}
+.intro_text p{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(151, 150, 150);
+}
+.intro_text h3{
+    color: #004c4c;
+}
+.frame_container{
+    padding: 10px 25px;
+}
+.input_container{
+    margin-top: 10px;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #004c4c;
+}
+input[type = "text"],
+input[type = "tel"],
+input[type = "password"]
+{
+    border: 1px solid black;
+    display: block;
+    font-size: 12px;
+    padding-left: 5%;
+    margin-top: 2px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    width: 95%;
+    height: 45px;
+    background-color: #e8fffc;
+}
+.register_btn{
+    background-color: #004c4c;
+    color: rgb(240, 240, 240);
+    padding: 20px 20px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 100px;
+    border: none;
+    width: 88%;
+    box-shadow: none;
+}
+
+.user_card{
+    height: 20vh;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+}
+
+.home_container{
+    padding: 25px;
+}
+.top_nav_btn{
+    background-color: #004c4c;
+    width: 20%;
+    font-size: 10px;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+ }
+
+.top_nav{
+    padding: 10px;
+    /*height: 60px;*/
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.top_info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.top_info h3{
+    font-size: 18px;
+    color: #004c4c;
+    font-weight: bold;
+    margin-bottom: 1px !important;
+    margin-top: 0;
+}
+
+.top_info p{
+    font-size: 11px;
+    color: #8f8b8b;
+    margin-bottom: 3px;
+}
+
+.fun_facts{
+    background-color: #004c4c;
+    padding: 1px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 35px;
+    width: 80px;
+    font-size: 12px;
+}
+.horizontal_line{
+    opacity: 0.4;
+}
+.info_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.last_order p{
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+.last_order div{
+    background-color: #e8fffc;
+    color: #004c4c;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.ranking_container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 15vh;
+    border-radius: 4px;
+    border: 2px solid #004c4c;
+    margin-top: 4rem;
+}
+.ewa_ranking h3{
+    color: #004c4c;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.ewa_ranking p{
+    margin: 0;
+    font-size: 11px;
+    color: rgb(184, 184, 184);
+}
+.ewa_ranking div{
+    background-color: #004c4c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.ewa_point_score{
+    text-align: center;
+}
+
+.ewa_point_score p{
+    font-size: 12px;
+    color: black;
+    margin: 0;
+}
+
+.ewa_point_score .score{
+    font-size: 40px;
+    font-weight: bold;
+    color: #004c4c;
+    background-color: #e8fffc;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.ewa_point_score span{
+    font-size: 12px;
+    color: gray;
+}
