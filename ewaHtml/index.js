@@ -5,8 +5,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
     button.addEventListener("click", ()=> console.log("register_btn_clicked"))
 
     function handleInputChange(e){
-        console.log(e.target.name, e.target.value)
+        console.log(e)
     }
+
     let inputFields = document.getElementsByTagName("input")
-    inputFields.forEach(inputField => inputField.addEventListener("change", handleInputChange))
+    Array.from(inputFields).forEach((inputField)=>inputField.addEventListener("input",(e)=> handleInputChange(e)))
+    // for (let i =0; i<inputFields.length; i++){
+    //     inputFields[i].addEventListener("input", (e)=>handleInputChange(e))
+    // }
 })
