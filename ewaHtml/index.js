@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function confirmRegistration(){
         if (Object.keys(registerObject).length ===4) {
             let {first_name, password} = registerObject
-            let userObject = repository.find(user => user.first_name = first_name)
-            if (userObject.password === password) {
-                location.href = "home.html"
+            if (repository.findIndex(user => user.first_name === first_name) !== -1) {
+                if (repository.find(user => user.first_name === first_name).password === password) {
+                    window.location.href = "home.html"
+                } else {
+                    alert("Please enter a correct password")
+                }
             } else {
-                alert("Please enter a correct password")
+                alert("User does not exist")
             }
         } else {
             alert("Incomplete user info")
