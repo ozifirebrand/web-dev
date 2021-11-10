@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         {
             first_name: "ujay",
             last_name: "Eroms",
-            phone_number: "08099992222",
+            email: "adaay@gmail.com",
             password: "1234859"
         },
         {
