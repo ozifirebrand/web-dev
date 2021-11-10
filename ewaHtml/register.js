@@ -16,9 +16,23 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     ]
 
-    //
-    function confirmRegistration(){
-        if (Object.keys(registerObject).length ===4) {
+    function confirmRegistration() {
+        if (Object.keys(registerObject).length === 4) {
+            try {
+                let userRepository = localStorage.getItem("ewauser")
+                if (userRepository === null) {
+                    let repository = [registerObject]
+                    localStorage.setItem("ewauser", JSON.stringify(repository))
+                } else {
+                    let previousRepository = JSON.parse(userRepository)
+                    let updatedRepository = [...previousRepository, registerObject]
+                    localStorage.setItem("ewauser", JSON.stringify(updatedRepository))
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        } else {
+            alert("Incomplete user info")
             let {first_name, password} = registerObject
             if (repository.findIndex(user => user.first_name === first_name) !== -1) {
                 if (repository.find(user => user.first_name === first_name).password === password) {
@@ -29,8 +43,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             } else {
                 alert("User does not exist")
             }
-        } else {
-            alert("Incomplete user info")
         }
     }
     //buttonElement
