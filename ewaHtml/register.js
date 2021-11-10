@@ -28,9 +28,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let button = document.getElementsByClassName("register_btn")[0]
         button.addEventListener("click", ()=>confirmRegistration())
     }
+//Input fields
+    function handleInputChange(e){
+        registerObject = { ... registerObject, [e.target.name]: e.target.value }
+    }
 
-    if (document.getElementsByClassName("register_input").length>0){
-        let registerInputFields = document.getElementsByClassName("register_btn");
+
+    function handleLoginChange(e){
+        loginObject = {... loginObject, [e.target.name]:e.target.value}
+    }
+
+
+    if (document.getElementsByClassName("register_btn").length>0){
+        let registerInputFields = document.getElementsByClassName("register_input");
         Array.from(registerInputFields).forEach((inputField)=>
             inputField.addEventListener("input", (e)=>handleInputChange(e)))
     }
@@ -40,25 +50,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         Array.from(loginInputFields).forEach((inputField)=>
             inputField.addEventListener("input",(e)=>handleLoginChange(e)))
     }
-
-
-    if (document.getElementsByClassName("login_input").length>0){
-        let loginButton = document.getElementsByClassName("login_btn")[0]
-        loginButton.addEventListener("click", ()=> confirmLogin())
-    }
-
-    function handleLoginChange(e){
-        loginObject = {... loginObject, [e.target.name]:e.target.value}
-    }
-
-    function handleInputChange(e){
-        registerObject = { ... registerObject, [e.target.name]: e.target.value }
-    }
-
-    let registerInputFields = document.getElementsByClassName("register_input")
-    Array.from(registerInputFields).forEach((inputField)=>
-    inputField.addEventListener("input", (e)=>handleLoginChange(e)))
-    //Input flow
 
 
     function confirmLogin(){
@@ -77,27 +68,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     }
 
-    // function confirmLogin(){
-    //     let userRepository = JSON.parse(localStorage.getItem("ewausers"))
-    //     let {email, password } = loginObject
-    //     if (userRepository.findIndex(user => user.email === email) !== -1){
-    //         if (userRepository.find(user => user.email === email).password === password) {
-    //             localStorage.setItem("ewauser", JSON.stringify(registerObject))
-    //             window.location.href="home.html"
-    //         }else {
-    //             alert("Please enter a correct password")
-    //         }
-    //     }else {
-    //         alert("User does not exist")
-    //     }
-    // }
 
-    if (document.getElementsByClassName("login_input").length >0){
+    if (document.getElementsByClassName("login_input").length>0){
         let loginButton = document.getElementsByClassName("login_btn")[0]
-        loginButton.addEventListener("click", ()=>confirmLogin())
+        loginButton.addEventListener("click", ()=> confirmLogin())
     }
 
-    // let inputFields = document.getElementsByTagName("input");
-    // Array.from(inputFields).forEach((inputField)=>
-    //     inputField.addEventListener("input",(e)=> handleInputChange(e)))
 })
+// function myFunction(){
+//     let username = JSON.parse(localStorage.getItem("ewauser"))
+//     document.getElementById("user_name").innerHTML = "Hey " + username.last_name
+// }
+//
+// myFunction()
